@@ -89,3 +89,30 @@ searchInput.addEventListener("keyup", function () {
     });
 
 });
+
+
+const searchInput = document.getElementById("searchInput");
+
+const cards = document.querySelectorAll(".stationery-card");
+
+searchInput.addEventListener("keyup", function () {
+
+    let searchValue = searchInput.value.toLowerCase();
+
+    cards.forEach(function(card){
+
+        let title = card.querySelector("h3").textContent.toLowerCase();
+
+        if(title.includes(searchValue)){
+
+            card.style.display = "block";
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+});
