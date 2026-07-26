@@ -92,27 +92,3 @@ searchInput.addEventListener("keyup", function () {
 
 
 
-const searchInput = document.getElementById("stationerySearch");
-const products = document.querySelectorAll(".product-card");
-
-searchInput.addEventListener("input", function () {
-
-    const searchValue = searchInput.value.toLowerCase();
-
-    products.forEach(function (product) {
-
-        const productName = product.querySelector("h3").textContent.toLowerCase();
-
-        if (productName.includes(searchValue)) {
-
-            product.style.display = "block";
-
-        } else {
-
-            product.style.display = "none";
-
-        }
-
-    });
-
-});
