@@ -92,22 +92,17 @@ searchInput.addEventListener("keyup", function () {
 
 
 
-<script>
-
 const searchInput = document.getElementById("stationerySearch");
 
 const products = document.querySelectorAll(".product-card");
-
 
 searchInput.addEventListener("keyup", function(){
 
     let searchText = searchInput.value.toLowerCase();
 
-
     products.forEach(function(product){
 
         let productName = product.innerText.toLowerCase();
-
 
         if(productName.includes(searchText)){
 
@@ -123,5 +118,3 @@ searchInput.addEventListener("keyup", function(){
     });
 
 });
-
-</script>
