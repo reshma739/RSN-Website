@@ -1,0 +1,172 @@
+/*==========================================
+                FOOTER
+==========================================*/
+
+.footer{
+
+    width:100%;
+
+    background:#7B431F;
+
+    color:#fff;
+
+}
+
+/* Orange Accent Line */
+
+.footer-top-line{
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,#ff5a00,#ff8a00,#ff5a00);
+
+    box-shadow:0 0 20px rgba(255,90,0,.6);
+
+}
+
+/* Container */
+
+.footer-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:70px 8% 50px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.2fr;
+
+    gap:60px;
+
+}
+
+/* Logo */
+
+.footer-box h2{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#fff;
+
+    letter-spacing:3px;
+
+}
+
+.footer-box span{
+
+    display:block;
+
+    color:#FFD8B2;
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-box p{
+
+    color:#F6E4D6;
+
+    line-height:1.9;
+
+}
+
+/* Headings */
+
+.footer-box h3{
+
+    color:#fff;
+
+    margin-bottom:22px;
+
+    position:relative;
+
+}
+
+.footer-box h3::after{
+
+    content:"";
+
+    width:45px;
+
+    height:3px;
+
+    background:#ff8a00;
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+}
+
+/* Lists */
+
+.footer-box ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-box ul li{
+
+    margin-bottom:16px;
+
+    color:#F6E4D6;
+
+}
+
+.footer-box ul li i{
+
+    color:#ff9d33;
+
+    margin-right:10px;
+
+}
+
+/* Links */
+
+.footer-box a{
+
+    color:#F6E4D6;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-box a:hover{
+
+    color:#fff;
+
+    padding-left:8px;
+
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    padding:22px;
+
+    color:#F6E4D6;
+
+    font-size:15px;
+
+}
+

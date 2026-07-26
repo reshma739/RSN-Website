@@ -1,0 +1,285 @@
+/*=========================================
+        STATIONERY HERO
+=========================================*/
+
+.stationery-hero{
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg,#fff8f2,#ffffff,#fff4e8);
+    border-bottom: 1px solid #eee;
+}
+
+.stationery-hero .hero-content{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.stationery-hero h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.stationery-hero h1 span{
+    color: #f47b20;
+}
+
+.stationery-hero p{
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/*=========================================
+        SEARCH SECTION
+=========================================*/
+
+.search-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:35px 0;
+}
+
+/* Search Box */
+
+.search-box{
+
+    width:420px;
+    max-width:90%;
+
+    height:50px;
+
+    background:#fff;
+
+    border:2px solid #f47b20;
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    box-shadow:0 8px 20px rgba(244,123,32,.12);
+
+    transition:.3s;
+
+}
+
+.search-box:hover,
+.search-box:focus-within{
+
+    box-shadow:0 12px 25px rgba(244,123,32,.22);
+
+    transform:translateY(-2px);
+
+}
+
+/* Icon */
+
+.search-box i{
+
+    color:#f47b20;
+
+    font-size:18px;
+
+    margin-right:12px;
+
+}
+
+/* Input */
+
+.search-box input{
+
+    border:none;
+
+    outline:none;
+
+    width:100%;
+
+    font-size:16px;
+
+    color:#333;
+
+    background:transparent;
+
+}
+
+.search-box input::placeholder{
+
+    color:#999;
+
+}
+
+
+
+
+/*=========================================
+        STATIONERY PRODUCTS
+=========================================*/
+
+.stationery-products{
+    padding:40px 8% 80px;
+    background:#fff;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading span{
+    color:#f47b20;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:42px;
+    color:#222;
+    margin:10px 0;
+}
+
+.section-heading p{
+    color:#666;
+    font-size:17px;
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/*========== GRID ==========*/
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/*========== CARD ==========*/
+
+.product-card{
+    background:#fff;
+    border:2px solid #f47b20;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:.35s ease;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/*========== IMAGE ==========*/
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:contain;
+    padding:25px;
+    transition:.35s;
+}
+
+/*========== TITLE ==========*/
+
+.product-card h3{
+    padding:18px;
+    font-size:22px;
+    color:#222;
+    font-weight:600;
+}
+
+/*========== HOVER ==========*/
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(244,123,32,.25);
+    border-color:#ff7a00;
+}
+
+.product-card:hover img{
+    transform:scale(1.08);
+}
+
+/*========== RESPONSIVE ==========*/
+
+@media(max-width:1100px){
+
+.products-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.products-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:500px){
+
+.products-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+
+
+
+
+
+
+
+/*=========================================
+        VISIT SHOP
+=========================================*/
+
+.visit-shop{
+    padding:70px 8%;
+    background:linear-gradient(135deg,#fff8f2,#ffffff);
+    text-align:center;
+}
+
+.visit-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.visit-content h2{
+    font-size:40px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.visit-content p{
+    font-size:18px;
+    color:#666;
+    line-height:1.9;
+}
+
+.visit-content h2::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#f47b20;
+    margin:15px auto 0;
+    border-radius:5px;
+}

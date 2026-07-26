@@ -1,0 +1,382 @@
+/*=========================================
+            PRINTING HERO
+=========================================*/
+
+.printing-hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:260px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:60px 8%;
+
+    background:#fffaf6;
+
+    overflow:hidden;
+
+}
+
+/* Decorative Pattern */
+
+.printing-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    right:-120px;
+
+    width:320px;
+
+    height:320px;
+
+    background:#f47b20;
+
+    opacity:.08;
+
+    border-radius:50%;
+
+}
+
+.printing-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-80px;
+
+    left:-80px;
+
+    width:220px;
+
+    height:220px;
+
+    background:#f47b20;
+
+    opacity:.06;
+
+    border-radius:50%;
+
+}
+
+/* Content Box */
+
+.printing-content{
+
+    position:relative;
+
+    max-width:850px;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+/* Orange Line */
+
+.printing-content::before{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:5px;
+
+    background:#f47b20;
+
+    margin:0 auto 20px;
+
+    border-radius:20px;
+
+}
+
+.printing-content span{
+
+    color:#f47b20;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.printing-content h1{
+
+    font-size:58px;
+
+    color:#222;
+
+    margin:18px 0;
+
+    font-weight:700;
+
+}
+
+.printing-content h1 span{
+
+    color:#f47b20;
+
+}
+
+.printing-content p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* Animation */
+
+.printing-content{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.printing-content h1{
+
+    font-size:42px;
+
+}
+
+.printing-content p{
+
+    font-size:16px;
+
+}
+
+.printing-hero{
+
+    padding:50px 20px;
+
+}
+
+}
+
+/*=========================================
+        PRINTING SERVICES
+=========================================*/
+
+.printing-services{
+    padding:80px 8%;
+    background:#fff;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 25px;
+    text-align:center;
+    border:1px solid #ececec;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:#f47b20;
+    box-shadow:0 18px 35px rgba(244,123,32,.18);
+}
+
+.service-card i{
+    width:75px;
+    height:75px;
+    line-height:75px;
+    font-size:30px;
+    color:#fff;
+    background:#f47b20;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    font-size:22px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.service-card p{
+    color:#666;
+    line-height:1.7;
+    font-size:15px;
+}
+
+@media(max-width:1100px){
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+}
+/*=========================================
+      SECTION HEADING ANIMATION
+=========================================*/
+
+.section-heading span{
+    display:inline-block;
+    opacity:0;
+    animation:fadeDown 0.8s ease forwards;
+}
+
+.section-heading h2{
+    opacity:0;
+    transform:translateY(30px);
+    animation:fadeUp 0.8s ease forwards;
+    animation-delay:0.3s;
+}
+
+.section-heading p{
+    opacity:0;
+    transform:translateY(30px);
+    animation:fadeUp 0.8s ease forwards;
+    animation-delay:0.6s;
+}
+
+/* Orange line animation */
+
+.section-heading::after{
+    content:"";
+    display:block;
+    width:0;
+    height:4px;
+    background:#f47b20;
+    margin:18px auto 0;
+    border-radius:20px;
+    animation:lineGrow .8s ease forwards;
+    animation-delay:.9s;
+}
+
+/* Animations */
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes lineGrow{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:90px;
+    }
+
+}
+
+/*=========================================
+        PRINTING NOTE
+=========================================*/
+
+.printing-note{
+    padding:50px 8%;
+    text-align:center;
+    background:#fff8f2;
+}
+
+.printing-note h2{
+    font-size:32px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.printing-note p{
+    max-width:700px;
+    margin:auto;
+    font-size:17px;
+    color:#666;
+    line-height:1.8;
+}
+
+.printing-note h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:#f47b20;
+    margin:15px auto 0;
+    border-radius:5px;
+}

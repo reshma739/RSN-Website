@@ -1,0 +1,358 @@
+/*=========================================
+        DIGITAL HERO
+=========================================*/
+
+.digital-hero{
+
+    position:relative;
+
+    height:320px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#ff8a00,#ff6200);
+
+}
+
+/* Decorative Circle 1 */
+
+.digital-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-100px;
+
+}
+
+/* Decorative Circle 2 */
+
+.digital-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    background:rgba(255,255,255,.10);
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    right:-80px;
+
+}
+
+/* Glass Box */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:10;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    padding:45px 60px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    animation:fadeUp 1s ease;
+
+}
+
+.hero-content span{
+
+    color:#ffe6cc;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-weight:600;
+
+}
+
+.hero-content h1{
+
+    color:#fff;
+
+    font-size:60px;
+
+    margin:15px 0;
+
+}
+
+.hero-content h1 span{
+
+    color:#fff7d6;
+
+}
+
+.hero-content p{
+
+    color:#fff;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    max-width:700px;
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+        DIGITAL SERVICES
+=========================================*/
+
+.digital-services{
+    padding:80px 8%;
+    background:#fff;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:#f47b20;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:42px;
+    color:#222;
+    margin:10px 0;
+}
+
+.section-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* Grid */
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/* Card */
+
+.service-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border-top:5px solid transparent;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    border-top:5px solid #f47b20;
+
+    box-shadow:0 18px 35px rgba(244,123,32,.20);
+
+}
+
+/* Icon */
+
+.service-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    background:#fff4ec;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.service-icon i{
+
+    font-size:32px;
+
+    color:#f47b20;
+
+}
+
+/* Title */
+
+.service-card h3{
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+    color:#222;
+
+}
+
+.service-card p{
+
+    color:#777;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+.services-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*=========================================
+        DIGITAL NOTE
+=========================================*/
+
+.digital-note{
+
+    padding:50px 8%;
+
+    text-align:center;
+
+    background:#fff8f2;
+
+}
+
+.digital-note h2{
+
+    font-size:32px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.digital-note p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    font-size:17px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.digital-note h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:4px;
+
+    background:#f47b20;
+
+    margin:15px auto 0;
+
+    border-radius:5px;
+
+}
