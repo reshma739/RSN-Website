@@ -262,27 +262,36 @@
 
             </p>
 
-            <form action="https://formspree.io/f/mwvgwzjv" method="POST">
+            <form>
 
-        <input 
-        type="text" 
-        name="name" 
-        placeholder="Your Name">
+                <div class="input-row">
 
-        <input 
-        type="email" 
-        name="email" 
-        placeholder="Your Email">
+                    <input type="text" placeholder="Your Name" required>
 
-        <textarea 
-        name="message" 
-        placeholder="Your Message"></textarea>
+                    <input type="tel" placeholder="Phone Number" required>
 
-        <button type="submit">
-            Send
-        </button>
+                </div>
 
-    </form>    
+                <div class="input-row">
+
+                    <input type="email" placeholder="Email Address">
+
+                    <input type="text" placeholder="Subject">
+
+                </div>
+
+                <textarea placeholder="Write Your Message..." rows="6"></textarea>
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Send Message
+
+                </button>
+
+            </form>
+
         </div>
 
         <!-- Right Side -->
